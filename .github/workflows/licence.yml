@@ -1,0 +1,13 @@
+name: Licence
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  licence:
+    uses: Distant-Signal/ci/.github/workflows/licence.yml@eb5552be3a85b5aa333879202b50941f5af878be
