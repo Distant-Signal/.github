@@ -11,8 +11,10 @@ commands. This guide covers what applies everywhere.
 ## Issues
 
 All issues live in the main repository,
-[Distant-Signal](https://github.com/FasterSpeeding/Distant-Signal/issues),
-whatever area they concern. Pick the issue form that fits. Security
+[distant-signal](https://github.com/Distant-Signal/distant-signal/issues),
+whatever area they concern. Pick the issue form that fits; the maintainer
+adds an `area:` label (`area:frontend`, `area:api`, `area:core`,
+`area:ingest`, `area:pollers`, `area:workers` or `area:deploy`). Security
 problems are the exception: report them privately, as described in
 [SECURITY.md](SECURITY.md).
 
@@ -31,16 +33,11 @@ problems are the exception: report them privately, as described in
 
 ## Commits
 
-- Every commit is authored `FasterSpeeding <lucy@cursed.solutions>`. Commit
-  identity is checked in CI, so set it before committing:
-
-  ```sh
-  git config user.name FasterSpeeding
-  git config user.email lucy@cursed.solutions
-  ```
-
-  If you are an outside contributor, open your pull request as usual; the
-  maintainer will sort out authorship when it merges.
+- Outside contributors commit under their own name and email, and keep
+  that authorship when the pull request merges. CI's commit identity check
+  accepts your own identity; it rejects AI attribution.
+- The maintainer's commits are authored
+  `FasterSpeeding <lucy@cursed.solutions>`.
 - Commit messages carry no AI attribution: no `Co-Authored-By` trailers
   naming an AI assistant and no "Generated with" footers. The same goes for
   pull request descriptions.

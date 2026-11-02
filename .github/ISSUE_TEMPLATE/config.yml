@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Report a security vulnerability
-    url: https://github.com/FasterSpeeding/Distant-Signal/security/advisories/new
+    url: https://github.com/Distant-Signal/distant-signal/security/advisories/new
     about: Please report vulnerabilities privately, never in a public issue.
   - name: Open an issue in the main repository
-    url: https://github.com/FasterSpeeding/Distant-Signal/issues/new/choose
+    url: https://github.com/Distant-Signal/distant-signal/issues/new/choose
     about: All Distant Signal issues live in the main repository, whatever area they concern.

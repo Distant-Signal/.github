@@ -11,7 +11,7 @@ Please report vulnerabilities privately, through GitHub's private
 vulnerability reporting: open the repository's **Security** tab and choose
 **Report a vulnerability**. If you aren't sure which repository is affected,
 report it on the main repository,
-[Distant-Signal](https://github.com/FasterSpeeding/Distant-Signal/security/advisories/new).
+[distant-signal](https://github.com/Distant-Signal/distant-signal/security/advisories/new).
 
 Please don't open a public issue, pull request or discussion for a
 vulnerability.
