@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest something new, or a change to how something works.
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of Distant Signal is this about? Pick "Not sure" if you don't know.
+      options:
+        - Not sure
+        - The website (frontend)
+        - The API
+        - Shared code, schema or line data (core)
+        - Train movement and timetable feeds (ingest)
+        - Pollers
+        - Workers (aggregator, enricher, notifier)
+        - Deployment and Helm chart
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you're trying to do
+      description: Describe the problem or the journey you have in mind, rather than a particular solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How you'd like it to work.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Anything you've tried instead

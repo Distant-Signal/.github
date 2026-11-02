@@ -1,0 +1,63 @@
+name: Bug report
+description: Something on the site, in the API or in the code doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. For a security problem, don't use this form: see the security policy instead.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of Distant Signal is this about? Pick "Not sure" if you don't know.
+      options:
+        - Not sure
+        - The website (frontend)
+        - The API
+        - Shared code, schema or line data (core)
+        - Train movement and timetable feeds (ingest)
+        - Pollers
+        - Workers (aggregator, enricher, notifier)
+        - Deployment and Helm chart
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you see? Include any error message exactly as shown.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The page or API route, the station, line or train involved, and what you did.
+      placeholder: |
+        1. Go to ...
+        2. Choose ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When it happened
+      description: Date and time (UK time), so it can be matched against the logs.
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      description: For website problems, for example "Firefox 140 on Android".
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots, links or other context.

@@ -1,0 +1,33 @@
+name: Wrong or missing rail data
+description: A line, station, route, status or timetable that is wrong or missing.
+labels: [data]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when the data is wrong rather than the site being broken: a missing station, a line in the wrong place, a status that doesn't match what happened.
+  - type: input
+    id: where
+    attributes:
+      label: Line, station or train
+      description: For example "Northern, Leeds to Harrogate" or the train's departure time and origin.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should be
+      description: If you know, include an official source such as the operator's own website or a published timetable.
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When you saw it
+      description: Date and time (UK time).
