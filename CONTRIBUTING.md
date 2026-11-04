@@ -5,8 +5,9 @@ maintained by one person. Bug reports, suggestions and pull requests are all
 welcome. For anything larger than a small fix, please open an issue first so
 we can agree on the approach before you spend time on it.
 
-Each repository's README and `CLAUDE.md` list its exact build, lint and test
-commands. This guide covers what applies everywhere.
+Each code repository's README and `CLAUDE.md` list its exact build, lint
+and test commands (`ci` documents its own in its README). This guide covers
+what applies everywhere.
 
 ## Issues
 
@@ -25,8 +26,8 @@ problems are the exception: report them privately, as described in
 - Make sure CI passes. Run the formatters, linters and tests for the parts
   you touched before you push.
 - Tests cover the change.
-- API changes get an entry in `docs/api-changelog.md`, newest first,
-  written for a client of the API.
+- API changes get an entry in ds-api's `docs/api-changelog.md`, newest
+  first, written for a client of the API.
 - Visible changes include screenshots at 390 px and 1366 px wide, in light
   and dark (four in all). Every new page has a title and a meta description,
   and every icon-only button has an `aria-label`.

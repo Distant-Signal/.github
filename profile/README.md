@@ -13,20 +13,19 @@ Use it at **[ds.cursed.solutions](https://ds.cursed.solutions/)**.
 
 ## Repositories
 
-The project is moving out of one repository into several, one at a time.
-Repositories marked *planned* don't exist yet; until then their code lives
-in `distant-signal`.
+The code is split across several repositories. All issues, whatever they
+concern, are filed in `distant-signal`.
 
 | Repository | Role |
 |---|---|
-| [distant-signal](https://github.com/Distant-Signal/distant-signal) | The frontend and the project's front page. Today it also holds every service, the charts and the line catalogue. All issues live here. |
-| ds-core (planned) | The shared crates, the database schema and migrations, grants, the stream envelope and the line catalogue. |
-| ds-api (planned) | The api, the trip planner and the timetable services. |
-| ds-ingest (planned) | The train movement and timetable feeds. |
-| ds-pollers (planned) | The pollers. |
-| ds-workers (planned) | The aggregator, enricher and notifier. |
-| ds-deploy (planned) | The Helm charts and the deploy tooling. |
-| ci (planned) | Shared workflows, actions and the Renovate preset. |
+| [distant-signal](https://github.com/Distant-Signal/distant-signal) | The frontend, the project's front page, the docs and the dev stack. All issues live here. |
+| [ds-core](https://github.com/Distant-Signal/ds-core) | The shared crates, the database schema and migrations, grants, the stream envelope and the line catalogue. |
+| [ds-api](https://github.com/Distant-Signal/ds-api) | The api, the trip planner and the timetable services, with the generated API types and changelog. |
+| [ds-ingest](https://github.com/Distant-Signal/ds-ingest) | The ingest writer, the Kafka relays and the train movement consumers. |
+| [ds-pollers](https://github.com/Distant-Signal/ds-pollers) | The pollers that fetch the upstream feeds. |
+| [ds-workers](https://github.com/Distant-Signal/ds-workers) | The aggregator, enricher and notifier. |
+| [ds-deploy](https://github.com/Distant-Signal/ds-deploy) | The Helm charts and the deploy tooling. |
+| [ci](https://github.com/Distant-Signal/ci) | Shared workflows, actions and the Renovate preset. |
 | [.github](https://github.com/Distant-Signal/.github) | This profile and the default security policy, contributing guide and issue forms. |
 | DS-MCP (hosted elsewhere) | An MCP server for Distant Signal. It consumes the public API. |
 
